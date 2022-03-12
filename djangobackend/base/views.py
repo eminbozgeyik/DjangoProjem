@@ -19,6 +19,6 @@ def room(request, pk):
     for i in rooms:
         if i['id'] == int(pk):
             room = i
-            print(i)
+            print(room)
     context = {'room':room}
     return render(request, 'base/room.html',context)
